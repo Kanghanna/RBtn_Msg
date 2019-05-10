@@ -44,10 +44,10 @@
             // 
             // gpOption1
             // 
-            resources.ApplyResources(this.gpOption1, "gpOption1");
             this.gpOption1.Controls.Add(this.rbYesNo);
             this.gpOption1.Controls.Add(this.rbOkCancel);
             this.gpOption1.Controls.Add(this.rbOk);
+            resources.ApplyResources(this.gpOption1, "gpOption1");
             this.gpOption1.Name = "gpOption1";
             this.gpOption1.TabStop = false;
             // 
@@ -74,10 +74,10 @@
             // 
             // gpOption2
             // 
-            resources.ApplyResources(this.gpOption2, "gpOption2");
             this.gpOption2.Controls.Add(this.rbQuestion);
             this.gpOption2.Controls.Add(this.rbInformation);
             this.gpOption2.Controls.Add(this.rbError);
+            resources.ApplyResources(this.gpOption2, "gpOption2");
             this.gpOption2.Name = "gpOption2";
             this.gpOption2.TabStop = false;
             // 
@@ -107,6 +107,7 @@
             resources.ApplyResources(this.btnShow, "btnShow");
             this.btnShow.Name = "btnShow";
             this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // Form1
             // 
@@ -119,9 +120,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.gpOption1.ResumeLayout(false);
-            this.gpOption1.PerformLayout();
             this.gpOption2.ResumeLayout(false);
-            this.gpOption2.PerformLayout();
             this.ResumeLayout(false);
 
         }
